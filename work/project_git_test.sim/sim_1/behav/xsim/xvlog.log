@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/xe-lpt-47/Documents/Maple/Pre-boarding/Git/fpga/rtl/bram_sum.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bram_sum
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/xe-lpt-47/Documents/Maple/Pre-boarding/Git/fpga/work/project_git_test.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
