@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1714383945">
+  <File Type="VDS-TIMING-PB" Name="bram_sum_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="bram_sum_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="bram_sum.dcp"/>
+  <File Type="REPORTS-TCL" Name="bram_sum_reports.tcl"/>
+  <File Type="PA-TCL" Name="bram_sum.tcl"/>
+  <File Type="RDS-RDS" Name="bram_sum.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="bram_sum_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="bram_sum_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="bram_sum_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../rtl/bram_sum.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../block_design/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="bram_sum"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
